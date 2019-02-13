@@ -1,0 +1,124 @@
+/* Fixed with A0 layout */
+@page {
+	size: A0 portrait;
+}
+
+@media screen {
+	body {
+		background: #333333;
+	}
+
+	#page {
+		width: 841mm;
+		height: 1189mm;
+		background: #ffffff;
+		display: block;
+		margin: 2em auto 2em auto;
+		position: relative;
+		box-shadow: 0 0 2em 0 rgba(0,0,0,0.9);
+	}
+}
+
+@media print {
+	body, #page {
+		margin: 0;
+	}
+}
+
+/* KU Header */
+#ku {
+	border-bottom: 1mm solid #666666;
+	height: 70mm;
+	padding: 40mm;
+}
+
+#ku_logo {
+	display: block;
+	height: 135mm;
+	position: absolute;
+	right: 40mm;
+	top: 25mm;
+}
+
+#ku h1, h2 {
+	color: #666666;
+	font-family: 'Adobe Garamond Pro', 'EB Garamond', serif;
+	font-weight: 400;
+	letter-spacing: 0.25em;
+	line-height: 1.5;
+	margin: 0;
+	max-width: 80%;
+	padding: 0;
+	text-transform: uppercase;
+}
+#ku h1 { font-size: 36pt; }
+#ku h2 { font-size: 30pt; }
+
+/* Body */
+
+#body {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 2fr 1fr;
+	height: 887mm;
+}
+
+#text {
+	grid-row: 2;
+}
+#text .textbox:nth-child(1) { grid-row: 2; grid-column: 1; }
+#text .textbox:nth-child(2) { grid-row: 2; grid-column: 2; }
+#text .textbox:nth-child(3) { grid-row: 2; grid-column: 3; }
+#text .textbox:nth-child(4) { grid-row: 2; grid-column: 4; }
+#text .textbox:nth-child(5) { grid-row: 2; grid-column: 5; }
+#text .textbox:nth-child(6) { grid-row: 2; grid-column: 6; }
+
+/* Footer */
+footer {
+	border-top: 1mm solid #666666;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20mm;
+	height: 110mm;
+	padding: 20mm 40mm;
+	position: absolute;
+	bottom: 0;
+	width: 761mm;
+}
+
+footer #logos { grid-column: 2; }
+footer #acknowledgements { grid-column: 1; }
+footer #authors { grid-column: 3; }
+
+#logos img {
+	display: block;
+	margin: 0 auto;
+}
+
+#logos figure {
+	color: #666666;
+	font-family: sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+	height: 65mm;
+	letter-spacing: 0.2em;
+	margin: 20mm 0 0 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#davids_logo {
+	height: 25mm;
+}
+
+#cseas_logo {
+	height: 40mm;
+}
+
+#acknowledgements {
+	text-align: left;
+}
+
+#authors {
+	text-align: right;
+}
