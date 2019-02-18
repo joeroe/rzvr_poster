@@ -18,41 +18,58 @@
 
     <div id="body">
       <section id="map">
+        <img src="figures/rzvr_location.png" id="location" />
+      	<h1>A survey of early prehistoric sites in the Razavar Valley (Kermanshah, Iran)</h1>
 
+	<div id="caption">
+	  <p>3D rendering of the Razavar Valley using the R package <code>rayshader</code> and SRTMv3 1 arc-second elevation data. The yellow shaded area indicates our estimated survey coverage based on GPS tracks. The coloured pegs represent sites. Stream network digitised from satellite imagery.</p>
+	</div>
+
+	<ul id="legend">
+	  <li id="legend-middlepal">Middle Palaeolithic</li>
+	  <li id="legend-upperpal">Upper Palaeolithic</li>
+	  <li id="legend-epipal">Epipalaeolithic</li>
+	  <li id="legend-neolithic">Neolithic</li>
+	  <li id="legend-chalco">Chalcolithic</li>
+	  <li id="legend-early-prehistoric">Early prehistoric</li>
+	  <li id="legend-late-prehistoric">Later prehistoric</li>
+	  <li id="legend-historic">Historic</li>
+	  <li id="legend-na">Undetermined</li>
+	</ul>
       </section>
 
-      <section id="text">
-        <div class="textbox">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Domestic_goat_kid_in_capeweed.jpg" />
+      <div id="text">
+        <section class="textbox" id="intro">
+          <img src="figures/razavar_valley.jpg" />
           <h2>The Razavar Valley</h2>
-        </div>
-        <div class="textbox">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Domestic_goat_kid_in_capeweed.jpg" />
-          <h2>Previous surveys</h2>
-        </div>
-        <div class="textbox">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Domestic_goat_kid_in_capeweed.jpg" />
-          <h2>GPS tracking</h2>
-        </div>
-        <div class="textbox">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Domestic_goat_kid_in_capeweed.jpg" />
-          <h2>Paperless recording</h2>
-        </div>
-        <div class="textbox">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Domestic_goat_kid_in_capeweed.jpg" />
-          <h2>Lovely flints</h2>
-        </div>
-        <div class="textbox">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Domestic_goat_kid_in_capeweed.jpg" />
-          <h2>Other stuff</h2>
-        </div>
-      </section>
+	  <p>The Central Zagros was one of the &ldquo;cradles of agriculture&rdquo; in Southwest Asia. Although not as well known as other centres, the area around Kermanshah especially has been visited by a number of researchers over the last 50 years.
+	  <p>In 2018, we visited one of the last parts of the Kermanshah region has not been intensively surveyed: the Razavar Valley. Our aim was to prospect for new Epipalaeolithic/Neolithic sites for excavation and contribute to a more complete picture of the prehistoric landscapes of the region.</p>
+        </section>
+	<section class="textbox" id="method">
+	  <img src="figures/gps_watches.jpg" />
+          <h2>Paperless survey</h2>
+	  <p>We recorded sites using Android tablets and <i>QField</i>, a mobile GIS app. A single digital recording system was used for form-based site descriptions, photography, GPS coordinates, and plans drawn over satellite imagery.</p>
+	  <p>Each member of the survey team was also equipped with a GPS watch that recorded their tracks throughout the day. This allowed for a precise estimation of the survey's coverage.</p>
+	  <p>We collected a sample of diagnostic surface artefacts from each site as an assay of its chronology.</p>
+        </section>
+	<section class="textbox" id="results">
+          <img src="figures/finds.png" />
+          <h2>Results</h2>
+	  <p>We documented 59 previously unknown archaeological sites. 19 of these potentially date to early prehistory, although many are only small surface scatters. Of particular interest are two tells which had Chalcolithic surface assemblages, but where we found Neolithic material at the base of sequences exposed by illicit trenching.</p>
+	  <p>Preliminary analysis suggests some spatial patterning: Palaeolithic sites are concentrated high on the southern slopes, often in caves; Epipalaeolithic/Neolithic tells on river terraces; and later tells further into the alluvial plain.</p>
+        </section>
+      </div>
+
     </div>
 
     <footer>
       <div id="acknowledgements">
-        <h1>References</h1>
-        <h1>Acknowledgements</h1>
+        <h2>Acknowledgements</h2>
+	<p>The field survey was carried out by Sajjat Alibaigi, Shokouh Khosravi, Mohen Heydari, and Patrick Nørskov Pedersen. We must also thank the directors of the TCEC project, Hojjat Darabi and Tobias Richter, and the Iranian Center for Archaeological Research for granting permission.</p>
+
+	<h2>Reproducible research</h2>
+	<p>Full source code for generating this poster can be found at <a href="https://github.com/joeroe/rzvr_poster">https://github.com/joeroe/rzvr_poster</a>.</p>
+	<img src="images/github_qr.png" />
       </div>
       <div id="logos" class="col-third">
         <img src="images/davids_logo.svg" id="davids_logo" />
@@ -62,18 +79,33 @@
         </figure>
       </div>
       <div id="authors">
-        <h1>Joe Roe</h1>
-        <p>Research assistant, University of Copenhagen</p>
-        <ul>
-          <li><a href="https://joeroe.io">https://joeroe.io</a></li>
-          <li><a href="mailto:jwg983@hum.ku.dk">jwg983@hum.ku.dk</a></li>
-        </ul>
-        <h1>Patrick Nørskov Pedersen</h1>
-        <p>PhD fellow, University of Copenhagen</p>
-        <ul>
-          <li><a href="https://ccrs.ku.dk/staff/?pure=en/persons/412979">https://ccrs.ku.dk/staff/?pure=en/persons/412979</a></li>
-          <li><a href="mailto:fnc296@hum.ku.dk">fnc296@hum.ku.dk</a></li>
-        </ul>
+	<div class="author">
+	  <img src="images/joe.jpg" />
+          <h2>Joe Roe</h2>
+          <p>Research assistant, University of Copenhagen</p>
+          <ul>
+            <li><a href="https://joeroe.io">https://joeroe.io</a></li>
+            <li><a href="mailto:jwg983@hum.ku.dk">jwg983@hum.ku.dk</a></li>
+          </ul>
+	</div>
+	<div class="author">
+	  <img src="images/patrick.jpg" />
+          <h2>Patrick Nørskov Pedersen</h2>
+          <p>PhD fellow, University of Copenhagen</p>
+          <ul>
+            <li><a href="https://ccrs.ku.dk/staff/?pure=en/persons/412979">https://ccrs.ku.dk/staff/?pure=en/persons/412979</a></li>
+            <li><a href="mailto:fnc296@hum.ku.dk">fnc296@hum.ku.dk</a></li>
+          </ul>
+	</div>
+	<div class="author">
+	  <img src="images/shokouh.jpg" />
+	  <h2>Shokouh Khosravi</h2>
+	  <p>Lecturer, Razi University</p>
+	  <ul>
+	    <li><a href="">https://modares.academia.edu/ShokouhKhosravi</a></li>
+	    <li><a href="mailto:shokouh.khosravi@gmail.com">shokouh.khosravi@gmail.com</a></li>
+	  </ul>
+	</div>
       </div>
     </footer>
 	</div>

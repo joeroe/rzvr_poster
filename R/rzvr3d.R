@@ -84,4 +84,5 @@ sites %>%
 #render_depth(focus = 0.6, focallength = 200)
 
 # Save snapshot
-render_snapshot("figures/model.png")
+#render_snapshot("figures/model.png")
+#rgl.postscript("figures/model.svg", fmt = "svg")
