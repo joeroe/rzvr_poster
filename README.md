@@ -12,4 +12,4 @@ This is the source repository for a poster on the preliminary results of the Raz
 
 ----
 
-* [High resolution PDF](blob/master/rzvr_poster.pdf) (77.4 MB)
+* [High resolution PDF](rzvr_poster.pdf) (77.4 MB)
