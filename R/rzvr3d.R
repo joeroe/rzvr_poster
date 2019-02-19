@@ -46,7 +46,7 @@ raster("data/rzvr_survey_intensity.tif") %>%
     c(matrix(1, nrow(.), ncol(.)), # Red
       matrix(1, nrow(.), ncol(.)), # Green
       matrix(0, nrow(.), ncol(.)), # Blue
-      as.integer(. > 0) * 0.33),                        # Alpha
+      as.integer(. > 0) * 0.33),   # Alpha
     dim = c(nrow(.), ncol(.), 4)
   )} ->
   survey
@@ -70,7 +70,6 @@ terrain %>%
 # Labels
 palette <- brewer.pal(9, "Set1")
 names(palette) <- unique(sites$primary_period)
-print(palette)
 
 sites %>% 
   filter(archaeological == TRUE) %>% 
