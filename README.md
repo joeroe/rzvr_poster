@@ -4,7 +4,9 @@
 <sup>1</sup> Centre for the Study of Early Agricultural Societies, University of Copenhagen  
 <sup>2</sup> Department of Archaeology, Razi University
 
-This is the source repository for a poster on the preliminary results of the Razavar Valley Survey (2018), presented at the 2019 meeting of the British Association for Near Eastern Archaeology in Liverpool.
+This is the source repository for a poster on the preliminary results of the Razavar Valley Survey, undertaken jointly by the University of Copenhagen and Razi University in Summer 2018. The poster will be presented at the 2019 meeting of the British Association for Near Eastern Archaeology in Liverpool.
+
+The main figure is generated in R using the [rayshader](https://github.com/tylermorganwall/rayshader) package (see `R/rzvr3d.R`). The poster itself is formatted with plain HTML and CSS.
 
 ----
 
