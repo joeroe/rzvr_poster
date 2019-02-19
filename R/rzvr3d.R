@@ -16,6 +16,7 @@ terrain <- raster("data/rzvr_e_srtm1v3s.tif")
 
 # Sites
 sites <- read_csv("data/rzvr_sites.csv")
+sites <- mutate(sites, primary_period = replace_na(primary_period, "Undetermined"))
 
 # Convert latlongs to matrix coordinates on the terrain raster
 sites[,c("longitude", "latitude")] %>% 
@@ -75,14 +76,11 @@ sites %>%
   filter(archaeological == TRUE) %>% 
   dplyr::select(name_en, x, y, primary_period) %>% 
   pmap(function(name_en, x, y, primary_period, terrain) {
-    render_label(terrain, "", x, y, z = 3500, zscale = 30, 
-                 color = palette[primary_period])
+    render_label(terrain, "", x, y, z = 3400, zscale = 30, 
+                 color = palette[primary_period], relativez = TRUE)
   }, terrain = terrain) %>% 
   invisible()
 
-# Bokeh
-#render_depth(focus = 0.6, focallength = 200)
-
 # Save snapshot
-#render_snapshot("figures/model.png")
-#rgl.postscript("figures/model.svg", fmt = "svg")
+render_snapshot("figures/map.png")
+
